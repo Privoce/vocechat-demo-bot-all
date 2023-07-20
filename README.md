@@ -1,5 +1,26 @@
 # VOCECHAT BOT DEMO
 
+> Please choose according to your own language
+
+## Run under Node
+- Install the node environment
+- Download or git clone, node folder, enter the folder
+- Copy `.env.example` to `.env`, fill in the corresponding data
+- Execute `npm i` to install dependent packages
+- Execute `npm start` to run the project
+
+## Python
+- install py
+- Download the python folder
+- Install the dependency package `pip install flask requests`
+- Corresponding place - line 28-29, fill in the corresponding data
+- run `main.py`
+
+The above address is the address of local operation, fill in the corresponding address on the BOT setting page of voce, `http://127.0.0.1:4080/demo` should be able to communicate
+If the server of the website and the webhook are not the same, you can reverse proxy it by yourself
+
+
+
 > 请根据自己的语言选择
 
 ## Node下运行
