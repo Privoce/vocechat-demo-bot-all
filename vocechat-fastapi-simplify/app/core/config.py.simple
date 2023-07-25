@@ -1,0 +1,39 @@
+# api配置
+# 主机
+api_app_host = os.environ.get('API_APP_HOST')
+# 名称
+api_app_name = os.environ.get('API_APP_NAME')
+# 端口
+api_app_port = os.environ.get('API_APP_PORT')
+
+# openai的apikey
+openai_key = os.environ.get('OPENAI_KEY')
+
+# voce_chat
+voce_url = os.environ.get('VOCE_URL')
+
+
+class Settings:
+    Api = {
+        "HOST": api_app_host,
+        "APP_NAME": api_app_name,
+        "PORT": api_app_port,
+        "RELOAD": True,
+    }
+    Openai = {
+        "secret": openai_key,
+        "model": "gpt-3.5-turbo",
+    }
+    VoceChat = {
+        "url": voce_url,
+        "bot_config": {
+            "bot1": {
+                "bot_id": "ur_bot_id",
+                "secret": "ur_bot_secret"
+            },
+            "bot2": {
+                "bot_id": "ur_bot_id",
+                "secret": "ur_bot_secret"
+            },
+        },
+    }
